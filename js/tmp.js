@@ -6,7 +6,7 @@ function visitCounter() {
     } else {
       localStorage.visitcount = 1;
     }
-    document.getElementById("counter").innerHTML = "You have viewed this page " + localStorage.visitcount + " time(s).";
+    document.getElementById("counter").innerHTML = "THIS browser loaded this page " + localStorage.visitcount + " time(s).";
   } else {
     document.getElementById("counter").innerHTML = "localStorage not supported.";
   }

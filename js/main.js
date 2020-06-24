@@ -1,16 +1,12 @@
 var vz = {
 	init : function () {
             vz.showLastModified();
-//            vz.showTest();
+            // "global" function defined in js/tmp.js
+            visitCounter();
 	},
 	showLastModified : function () {
 		document.querySelector("footer span").innerHTML = document.lastModified;		
 	},
-	showTest : function () {
-		document.querySelector("aside").innerHTML = "index.js: init() calling showTest()...";
-	}	
 };
 
-// Hm... Not working. Why?
-//window.onload = vz.init;
-window.onload = visitCounter();
+window.onload = vz.init;
