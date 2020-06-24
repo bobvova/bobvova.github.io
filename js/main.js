@@ -11,4 +11,6 @@ var vz = {
 	}	
 };
 
-window.onload = vz.init;
+// Hm... Not working. Why?
+//window.onload = vz.init;
+window.onload = visitCounter();
