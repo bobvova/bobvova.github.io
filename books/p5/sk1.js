@@ -13,4 +13,4 @@ let sketch = p => {
   };
 };
 
-let p5a = new p5(sketch, c1);
+let p5a = new p5(sketch, 'c1');
