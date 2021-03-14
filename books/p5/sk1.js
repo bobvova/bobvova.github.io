@@ -1,7 +1,8 @@
 let sketch = p => {
   let x = 100;
   let y = 100;
-
+  
+  // () are required, if there is no parameters
   p.setup = () => {
     p.createCanvas(800, 610);
   };
