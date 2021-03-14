@@ -12,12 +12,12 @@ let sketch = p => {
   // Each statement is executed in sequence and after the last line is read, 
   // the first line is executed again.
   p.draw = () => {
-    background(64);
+    p.background(64);
     y = y - 1;
     if (y < 0) {
       y = height;
     }
-    line(0, y, width, y);
+    p.line(0, y, width, y);
   };
 };
 
