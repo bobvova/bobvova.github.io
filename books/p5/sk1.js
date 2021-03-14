@@ -1,11 +1,11 @@
 let sketch = p => {
   let x = 100;
-  let y = 100;
+  let y = 400;
   
   // () are required, if there is no parameters
   p.setup = () => {
     p.createCanvas(800, 610);
-    p.stroke(200); // Set line drawing color to white
+    p.stroke(200);
     p.frameRate(10);
   };
 
