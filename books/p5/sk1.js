@@ -4,14 +4,14 @@ let sketch = p => {
   
   // () are required, if there is no parameters
   p.setup = () => {
-    p.createCanvas(800, 610);
+    p.createCanvas(600, 400);
     p.stroke(200);
     p.frameRate(10);
   };
 
   p.draw = () => {
     p.background(64);
-    y = y - 1;
+    y = y - 2;
     if (y < 0) {
       y = p.height;
     }
