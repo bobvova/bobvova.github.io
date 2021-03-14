@@ -8,16 +8,14 @@ let sketch = p => {
     p.stroke(200); // Set line drawing color to white
     p.frameRate(10);
   };
-  
-  // Each statement is executed in sequence and after the last line is read, 
-  // the first line is executed again.
+
   p.draw = () => {
     p.background(64);
     y = y - 1;
     if (y < 0) {
-      y = height;
+      y = p.height;
     }
-    p.line(0, y, width, y);
+    p.line(0, y, p.width, y);
   };
 };
 
