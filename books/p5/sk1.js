@@ -5,12 +5,19 @@ let sketch = p => {
   // () are required, if there is no parameters
   p.setup = () => {
     p.createCanvas(800, 610);
+    p.stroke(200); // Set line drawing color to white
+    p.frameRate(10);
   };
-
+  
+  // Each statement is executed in sequence and after the last line is read, 
+  // the first line is executed again.
   p.draw = () => {
-    p.background(0);
-    p.fill(255);
-    p.rect(x, y, 50, 50);
+    background(64);
+    y = y - 1;
+    if (y < 0) {
+      y = height;
+    }
+    line(0, y, width, y);
   };
 };
 
