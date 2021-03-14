@@ -2,11 +2,11 @@ let sketch = p => {
   let x = 100;
   let y = 100;
 
-  p.setup => {
+  p.setup = function(){
     p.createCanvas(800, 610);
   };
 
-  p.draw => {
+  p.draw = function() {
     p.background(0);
     p.fill(255);
     p.rect(x, y, 50, 50);
