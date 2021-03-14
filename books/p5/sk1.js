@@ -1,8 +1,16 @@
-function setup() {
-  createCanvas(800, 600);
-}
+let sketch = p => {
+  let x = 100;
+  let y = 100;
 
-function draw() {
-  background(220);
-  ellipse(50,50,150,200);
-}
+  p.setup => {
+    p.createCanvas(800, 610);
+  };
+
+  p.draw => {
+    p.background(0);
+    p.fill(255);
+    p.rect(x, y, 50, 50);
+  };
+};
+
+let p5a = new p5(sketch, c1);
